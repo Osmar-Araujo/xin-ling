@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cadastro de Cartões</title>
+	<link rel="stylesheet" type="text/css" href="/css/cadastroCliente.css">
+</head>
+<body>
+
+	<div id="main-container">
+		<h2>Cadastro do Meio de Pagamento</h2>
+		<form id="register-form" action="salvar" method="post">
+			<div class="full-box">
+				<label for="nometitular">Nome do Titular</label>
+				<input type = "text" name="nometitular" id="nometitular" placeholder="Digite o nome do titular do cartão">
+			</div>
+			<div class="half-box spacing">
+				<label for="numerocartao">Número do Cartão</label>
+				<input type="text" name="numerocartao" id="numerocartao" placeholder="Digite o número do cartão">
+			</div>
+			<div class="half-box">
+				<label for="datavalidade">Data de validade do cartão</label>
+				<input type = "text" name="datavalidade" id="datavalidade" placeholder="Digite a data de validade do cartão">
+			</div>
+			<div class="half-box spacing">
+				<label for="cvv">Número validador ou CVV</label>
+				<input type="text" name="cvv" id="cvv" placeholder="Os 3 números atrás do cartão">
+			</div>
+			<div class="half-box">
+				<label for="bandeira">Bandeira</label>
+				<input type="text" name="bandeira" id="bandeira" placeholder="Se é VISA, Master, Cirros,etc...">
+			</div>
+			<div class="full-box">
+				<input type="checkbox" name="agreement" id="agreement"/>
+				<label for="agreement" id="agreement-label">Eu li e aceito os <a href="#">termos de uso.</a></label>
+			</div>
+			<div type="hiden">
+			</div>
+			<div class="full-box">
+				<input type="submit" id="btn-submit" value="Cadastrar">
+			</div>
+		</form>
+	</div>
+	<p class="error-validation template"></p>
+	<script src="js/scripts.js" type="text/javascript"></script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cadastro de Clientes</title>
+	<link rel="stylesheet" type="text/css" href="/css/cadastroCliente.css">
+</head>
+<body>
+
+	<div id="main-container">
+		<h2>Cadastre-se e faça seus pedidos!!!</h2>
+		<h2>Que nós os tornaremos realidade!!!</h2>
+		<form id="register-form" action="salvar" method="post">
+			<div class="full-box">
+				<label for="nome">Nome</label>
+				<input type = "text" name="nome" id="nome" placeholder="Digite seu Nome">
+			</div>
+			<div class="half-box spacing">
+				<label for="email">E-mail</label>
+				<input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+			</div>
+			<div class="half-box">
+				<label for="dataNascimento">Data de Nascimento</label>
+				<input type = "text" name="dataNascimento" id="dataNascimento" placeholder="Digite sua Data de Nascimento">
+			</div>
+			<div class="half-box spacing">
+				<label for="cpf">CPF</label>
+				<input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF">
+			</div>
+			<div class="half-box">
+				<label for="confirmasenha">Telefone</label>
+				<input type="tel" name="telefone" id="telefone" placeholder="Digite seu Telefone">
+			</div>
+			<div class="half-box spacing">
+				<label for="senha">Senha</label>
+				<input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+			</div>
+			<div class="half-box">
+				<label for="confirmasenha">Confirme a senha</label>
+				<input type="password" name="confirmasenha" id="confirmasenha" placeholder="Confirme sua senha">
+			</div>
+			<div class="full-box">
+				<input type="checkbox" name="agreement" id="agreement"/>
+				<label for="agreement" id="agreement-label">Eu li e aceito os <a href="#">termos de uso.</a></label>
+			</div>
+			<div type="hiden">
+			</div>
+			<div class="full-box">
+				<input type="submit" id="btn-submit" value="Cadastrar">
+			</div>
+		</form>
+	</div>
+	<p class="error-validation template"></p>
+	<script src="js/scripts.js" type="text/javascript"></script>
+
+</body>
+</html>
